@@ -1,0 +1,8 @@
+www目录下的src为需要编辑的源代码
+www目录下的template为html模版文件
+每次新建一个视图需要在src下新建一个文件夹结构如firstPage文件夹
+同时需要在template文件夹下添加对应html模版
+所有路由代码写在router.js中
+所有业务逻辑代码写在controller.js中
+每次新建一个视图需要在src/entry目录下的route.js和controllers.js中添加响应模块
+

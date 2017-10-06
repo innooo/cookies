@@ -1,0 +1,11 @@
+<ion-view hide-tabs='true' title='关于我们'>
+    <ion-nav-bar>
+        <ion-nav-back-button class='button-icon' ng-click="goBack()">
+            <i class="icon ion-ios-arrow-left"></i>{{getPreviousTitle() || ''}}
+        </ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-content on-swipe-left="onSwipeLeft()">
+        <h1>关于我们</h1>
+    </ion-content>
+</ion-view>

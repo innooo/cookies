@@ -1,0 +1,316 @@
+.fixedMenu {
+    position: fixed;
+    z-index: 20;
+    width: 60px;
+    height: 60px;
+    background: #f77062;
+    right: -30px;
+    bottom: 120px;
+    border-radius: 100%;
+}
+
+
+/* 图标大小变化 */
+
+.fixedMenu i {
+    padding-left: 10px;
+    line-height: 60px;
+    font-size: 26px;
+    color: #fff;
+}
+
+.fixedMenu .smaller {
+    font-size: 52px;
+}
+
+.fixedMenu .larger {
+    animation: larger 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.fixedMenu .smaller {
+    animation: smaller 0.3s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes larger {
+    from {
+        font-size: 26px;
+    }
+    to {
+        font-size: 52px;
+    }
+}
+
+@keyframes smaller {
+    from {
+        font-size: 52px;
+    }
+    to {
+        font-size: 26px;
+    }
+}
+
+
+/* 图标大小变化 */
+
+.menuback {
+    right: 20px;
+}
+
+.submenuback1 {
+    bottom: 190px;
+}
+
+.submenuback2 {
+    bottom: 260px;
+}
+
+.submenuback3 {
+    bottom: 330px;
+}
+
+.submenuback4 {
+    bottom: 400px;
+}
+
+.subMenu {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    z-index: 19;
+    right: 20px;
+    opacity: 0;
+    bottom: 120px;
+}
+
+.submenuactive1 {
+    animation: submenu1 0.4s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.submenuactive2 {
+    animation: submenu2 0.6s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.submenuactive3 {
+    animation: submenu3 0.8s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.submenuactive4 {
+    animation: submenu4 1s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.menuactived {
+    animation: sidemenu 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sidemenu {
+    from {
+        right: -30px;
+    }
+    to {
+        right: 20px;
+    }
+}
+
+@keyframes submenu1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        bottom: 190px;
+    }
+}
+
+@keyframes submenu2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        bottom: 260px;
+    }
+}
+
+@keyframes submenu3 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        bottom: 330px;
+    }
+}
+
+@keyframes submenu4 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        bottom: 400px;
+    }
+}
+
+
+/* 菜单返回动画 */
+
+.submenuback1 {
+    animation: submenuback1 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.submenuback2 {
+    animation: submenuback2 0.6s;
+    animation-fill-mode: forwards;
+}
+
+.submenuback3 {
+    animation: submenuback3 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.submenuback4 {
+    animation: submenuback4 1s;
+    animation-fill-mode: forwards;
+}
+
+.menuback {
+    animation: sidemenuback 0.3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sidemenuback {
+    from {
+        right: 20px;
+    }
+    to {
+        right: -30px;
+    }
+}
+
+@keyframes submenuback1 {
+    0% {
+        opacity: 1;
+        bottom: 190px;
+    }
+    100% {
+        opacity: 0;
+        bottom: 120px;
+    }
+}
+
+@keyframes submenuback2 {
+    0% {
+        opacity: 1;
+        bottom: 260px;
+    }
+    100% {
+        opacity: 0;
+        bottom: 120px;
+    }
+}
+
+@keyframes submenuback3 {
+    0% {
+        opacity: 1;
+        bottom: 330px;
+    }
+    100% {
+        opacity: 0;
+        bottom: 120px;
+    }
+}
+
+@keyframes submenuback4 {
+    0% {
+        opacity: 1;
+        bottom: 400px;
+    }
+    100% {
+        opacity: 0;
+        bottom: 120px;
+    }
+}
+
+.tab01 {
+    background: #eaeaea;
+    border: 0;
+    margin: 0;
+    color: #353535;
+}
+
+.tab01 .item-avatar h2 {
+    color: #f68a42;
+}
+
+.tab01 .item-avatar p {
+    color: #9b9b9b;
+}
+
+.tab01 .item-wrap {
+    margin-bottom: 10px;
+}
+
+.tab01 .item-image {
+    padding: 0 10px;
+}
+
+.tab01 .links {
+    /* height: 20px; */
+    padding: 16px 10px;
+}
+
+.tab01 .links .item-icon-bottom {
+    padding: 0 16px;
+    font-size: 12px;
+    color: #666;
+}
+
+.item-wrap .links .like span {
+    display: inline-block;
+    vertical-align: center;
+    text-align: center;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.item-wrap .links .like:before {
+    display: inline-block;
+    content: '';
+    background: yellow url(../img/icon1.jpg) center center no-repeat;
+    background-size: cover;
+    width: 10px;
+    height: 14px;
+}
+
+.tab01 .links .activated {
+    color: #f67063;
+}
+
+.tab01 .links .flr {
+    float: right;
+}
+
+.tab01 .item {
+    border: 0;
+}
+
+.tab01_img {
+    height: 200px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <!-- 上拉加载的时候distance 要设置成负值例如:-10% -->
+    <style>
+        .this {
+            color: red;
+        }
+    </style>
+</head>
+
+<body ng-app="starter" ng-controller='ctrl'>
+    <ion-side-menus>
+
+
+        <!-- 左侧菜单 -->
+        <ion-side-menu side="left" width='200'>
+            <!-- 中间内容 -->
+            <ion-side-menu-content>
+                <ion-header-bar class='bar-royal'>
+                    <h1 class='title'>header</h1>
+                </ion-header-bar>
+                <ion-content>
+                    <ion-list>
+                        <ion-item>222</ion-item>
+                        <ion-item>222</ion-item>
+                        <ion-item>222</ion-item>
+                        <ion-item>222</ion-item>
+                        <ion-item>222</ion-item>
+                    </ion-list>
+                </ion-content>
+            </ion-side-menu-content>
+        </ion-side-menu>
+
+        <ion-side-menu-content>
+            <!-- 主要内容，通常 <ion-nav-view> -->
+            <!-- 头部 -->
+            <ion-header-bar class='bar-positive'>
+                <button class='button button-clear' ng-click='toggleLeft'><i class='icon ion-navicon'></i></button>
+                <h1 class='title'>头部</h1>
+            </ion-header-bar>
+
+            <!-- 内容 -->
+            <ion-content class='has-footer'>
+                <ion-refresher pulling-text="刷新中..." on-refresh="doRefresh()">
+                </ion-refresher>
+                <ion-list>
+                    <ion-item ng-repeat='i in arr'>{{i}}</ion-item>
+                    <button class='button button-royal' ng-click='showPopup()'>自定义弹出框</button>
+                    <button class='button button-balanced' ng-click='confirm()'>确认框</button>
+                    <button class='button button-positive' ng-click='error()'>警告框</button>
+                    <ion-item ng-repeat='i in arr1 track by $index'>{{i}}</ion-item>
+                </ion-list>
+
+
+
+                <ion-infinite-scroll on-infinite="loadMore()" distance="-30%">
+                </ion-infinite-scroll>
+
+            </ion-content>
+            <!-- 底部 -->
+            <div class='bar bar-footer bar-balanced'>
+                <p class='title'>底部</p>
+            </div>
+        </ion-side-menu-content>
+    </ion-side-menus>
+</body>
+
+
+</html>

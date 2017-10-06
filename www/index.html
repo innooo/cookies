@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src='lib/ionic/js/angular/angular-animate.min.js'></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+
+    <!-- your app's js -->
+
+
+<link href="css/bundle.48b248d74b9a4a15ca82.css" rel="stylesheet"><script type="text/javascript" src="js/bundle.app.js"></script></head>
+
+
+<body ng-app="starter">
+    <ion-side-menus>
+        <ion-side-menu-content>
+            <!-- 视图容器,无name属性为默认容器 -->
+            <ion-nav-view>
+
+            </ion-nav-view>
+        </ion-side-menu-content>
+
+
+        <ion-side-menu ng-controller='sidemenu'>
+            <ion-content class='sidemenu'>
+                <div class="list card self">
+
+                    <div class="item item-avatar self-info">
+                        <img src="img/ionic.png">
+                        <h2>Marty McFly</h2>
+
+                    </div>
+                    <div class='signed'>
+                        <i></i>
+                        <a href="">签到</a>
+                    </div>
+                    <div class="self-action">
+                        <a href=""><em>粉丝</em><span>50</span></a>
+                        <a href=""><em>关注</em><span>60</span></a>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="list card menu">
+
+                    <a menu-close href="#profile" class="item item-icon-left">
+                        <i class="icon ion-ios-person-outline"></i> 个人资料
+                    </a>
+
+                    <a href="#" class="item item-icon-left">
+                        <i class="icon ion-android-star-outline"></i> 我的收藏
+                    </a>
+
+                    <a href="#" class="item item-icon-left">
+                        <i class="icon ion-ios-cart-outline"></i> 我的购物车
+                    </a>
+
+                    <a href="#" class="item item-icon-left">
+                        <i class="icon ion-card"></i> 帐号管理
+                    </a>
+
+                    <a href="#" class="item item-icon-left">
+                        <i class="icon ion-information"></i> 关于我们
+                    </a>
+
+                    <a href="#" class="item item-icon-left">
+                        <i class="icon ion-ios-gear-outline"></i> 设置
+                    </a>
+
+                </div>
+            </ion-content>
+
+
+        </ion-side-menu>
+    </ion-side-menus>
+
+
+</body>
+
+</html>

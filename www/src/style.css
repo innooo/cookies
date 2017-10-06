@@ -1,0 +1,159 @@
+#tabs {
+    background: #fff;
+    box-shadow: 0, -5px 5px red;
+}
+
+
+/* 侧滑菜单样式 */
+
+.sidemenu {
+    background: #f77062;
+    color: #fff;
+}
+
+.self {
+    margin: 0;
+    padding: 0;
+    background: #f77062;
+    border: 0;
+    box-shadow: none;
+}
+
+.self .self-info {
+    display: flex;
+    align-items: center;
+    background: #f77062;
+    border: 0;
+    box-shadow: none;
+}
+
+.self-info img {
+    border-radius: 100%;
+}
+
+.self-info h2 {
+    color: #fff;
+}
+
+.self .signed {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.self .signed i {
+    width: 50px;
+    height: 5px;
+    background: #fff;
+}
+
+.self .signed a {
+    padding: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.self .self-action {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.self .self-action a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.self .self-action a em {
+    font-style: normal;
+    font-size: 16px;
+}
+
+.self .self-action a span {
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.menu {
+    padding-top: 40px;
+    box-shadow: none;
+    background: #f77062;
+}
+
+.menu .item {
+    background: #f77062;
+    border: none;
+    font-size: 14px;
+}
+
+.activated {
+    color: red!important;
+}
+
+
+/* 帖子页面样式 */
+
+.center_head {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slide-item {
+    margin-top: 65px;
+}
+
+
+/* .center-slide {} */
+
+.tab_default {
+    background: #f67063;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab_tit {
+    padding: 20px 10px;
+}
+
+.tab_select .tab_tit {
+    border-bottom: solid 2px #0e9fdd;
+}
+
+.center-slide {
+    background: #eaeaea;
+}
+
+
+/* .arrow-top {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 20px;
+  border: 6px solid #3E89F5;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+.arrow-top:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 12px solid #fff;
+  right: -12px;
+  bottom: -13px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+} */

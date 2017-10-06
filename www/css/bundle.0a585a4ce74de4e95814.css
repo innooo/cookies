@@ -1,0 +1,133 @@
+/* 帖子页面样式 */
+
+.center_head {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slide-item {
+    margin-top: 65px;
+}
+
+
+/* .center-slide {} */
+
+.tab_default {
+    background: #f67063;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab_tit {
+    padding: 20px 10px;
+}
+
+.tab_select .tab_tit {
+    border-bottom: solid 2px #0e9fdd;
+}
+
+.center-slide {
+    background: #eaeaea;
+}
+
+
+/* .arrow-top {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 20px;
+  border: 6px solid #3E89F5;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+.arrow-top:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 12px solid #fff;
+  right: -12px;
+  bottom: -13px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+} */body {
+    background: #eaeaea;
+}
+
+.str {
+    color: green;
+}.tab01 {
+    background: #eaeaea;
+    border: 0;
+    margin: 0;
+    color: #353535;
+}
+
+.tab01 .item-avatar h2 {
+    color: #f68a42;
+}
+
+.tab01 .item-avatar p {
+    color: #9b9b9b;
+}
+
+.tab01 .item-wrap {
+    margin-bottom: 10px;
+}
+
+.tab01 .item-image {
+    padding: 0 10px;
+}
+
+.tab01 .links {
+    /* height: 20px; */
+    padding: 16px 10px;
+}
+
+.tab01 .links .item-icon-bottom {
+    padding: 0 16px;
+    font-size: 12px;
+    color: #666;
+}
+
+.item-wrap .links .like span {
+    display: inline-block;
+    vertical-align: center;
+    text-align: center;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.item-wrap .links .like:before {
+    display: inline-block;
+    content: '';
+    background: yellow url(../img/icon1.3d882e9b45284dc603d07d975e14ff7f.jpg) center center no-repeat;
+    background-size: cover;
+    width: 10px;
+    height: 14px;
+}
+
+.tab01 .links .activated {
+    color: #f67063;
+}
+
+.tab01 .links .flr {
+    float: right;
+}
+
+.tab01 .item {
+    border: 0;
+}
+
+.tab01_img {
+    height: 200px;
+}
